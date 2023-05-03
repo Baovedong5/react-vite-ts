@@ -1,3 +1,5 @@
+import { TypeAnimation } from "react-type-animation";
+
 const HomeCV = () => {
   return (
     <>
@@ -18,12 +20,26 @@ const HomeCV = () => {
                 </div>
                 <div className="name_holder">
                   <h3>
-                    Alan <span>Michaelis</span>
+                    Thanh <span>Phương</span>
                   </h3>
                 </div>
                 <div className="text_typing">
                   <p>
-                    I'm a <span className="arlo_tm_animation_text_word"></span>
+                    I'm a&nbsp;
+                    <TypeAnimation
+                      sequence={[
+                        "Freelancer",
+                        2000, // Waits 2s
+                        "UI/UX Designer",
+                        2000, // Waits 2s
+                        "Web Develooper",
+                        2000, // Waits 2s
+                      ]}
+                      wrapper="span"
+                      cursor={true}
+                      repeat={Infinity}
+                      //   style={{ fontSize: "2em", display: "inline-block" }}
+                    />
                   </p>
                 </div>
               </div>
