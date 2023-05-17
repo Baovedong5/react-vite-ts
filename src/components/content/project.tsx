@@ -108,7 +108,7 @@ const Project = () => {
               <ul>
                 {dataProjects.map((item, index) => {
                   return (
-                    <li>
+                    <li key={`key ${index}`}>
                       <div
                         className="inner"
                         title="Xem Chi Tiết"
